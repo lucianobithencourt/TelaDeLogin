@@ -37,11 +37,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque tempora ex et dicta, nihil incidunt. Eos nam sapiente necessitatibus dicta vel minus! Repellat, vero perspiciatis sint possimus nulla magni!</p>
 
                 <form action="login.php" method="post">
-                    <div class="campo">
+                    <div class="campo" autocomplete="on">
                         <span class="material-symbols-outlined">
                             person_filled
                             </span>
-                            <input type="email" name="login" id="ilogin" placeholder="Seu e-mail">
+                            <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required  maxlength="30">
                             <label for="ilogin">Login :</label>
                     </div>
 
@@ -49,9 +49,13 @@
                         <span class="material-symbols-outlined">
                             vpn_key
                             </span>
-                             <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                             <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlenght="6"   maxlength="12">
                              <label for="isenha">Senha :</label>
                     </div>
+                    <input type="submit" value="Logar">
+                   <a href="#">Esqueci a Senha</a><span class="material-symbols-outlined">
+                    mail
+                    </span>
                 </form>
             </div>
         </section>
