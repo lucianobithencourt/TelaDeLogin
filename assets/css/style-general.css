@@ -33,7 +33,7 @@ main {
 section#login {
     background-color: var(--cor5);
     width: 250px;
-    height: 545px;
+    height: 555px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -112,7 +112,7 @@ form > a.botao {
 }
 
 form > a.botao:hover{
-    color: rgb(189, 115, 5);
+    color:#ff4500;
     font-weight: bold;
 }
 
@@ -121,5 +121,11 @@ background-color:#D89966;
 display:block;
 width: 100%;
 height: 40px;
+border-radius: 5px;
+margin:2px 0px;
+}
+
+label {
+    display:none;
 }
 
